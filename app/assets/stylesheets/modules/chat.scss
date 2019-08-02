@@ -4,6 +4,25 @@
     box-sizing: border-box;
     height: 100px;
     padding: 0 40px;
+    background-color: rgba(252, 229, 165, 0.986);
+    // .left-header {
+    //   float: left;
+    //   &__title {
+    //     color: #333;
+    //     font-size: 20px;
+    //     margin-top: 35px;
+    //   }
+    //   &__members {
+    //     color: #999;
+    //     display: flex;
+    //     font-size: 12px;
+    //     margin-top: 15px;
+    //     .member {
+    //       display: inline-block;
+    //       padding-right: 5px;
+    //     }
+    //   }
+    // }
     .left-header {
       float: left;
       &__title {
@@ -31,10 +50,24 @@
       margin-top: 28px;
       padding: 0 20px;
     }
+    .left-header__timer {
+      width: 150px;
+      height: 10px;
+      margin: 10px auto;
+      padding: 20px;
+      background-color: rgb(238, 192, 192);
+      border: 1px solid rgb(51, 33, 49);
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin: auto;
+      position: relative;
+      font-size: 20px;
+      color: #220404ea
+    }
   }
 
   .messages {
-    background-color: #FAFAFA;
+    background-color: rgba(252, 229, 165, 0.986);
     box-sizing: border-box;
     padding: 46px 40px 0;
     height: calc(100vh - 190px);
@@ -65,7 +98,7 @@
   }
 
   .form {
-    background-color: #DDDDDD;
+    background-color: rgb(236, 203, 213);
     box-sizing: border-box;
     height: 90px;
     padding: 20px 50px 20px 40px;
@@ -76,7 +109,7 @@
       width: calc(100% - 150px);
     }
     &__mask {
-      background-color: $white;
+      background-color: rgb(250, 238, 206);
       float: left;
       height: 50px;
       padding-right: 10px;
@@ -89,9 +122,10 @@
       }
     }
     &__submit {
-      background-color: $light_blue;
+      background-color: rgb(143, 23, 113);
       border: none;
       color: $white;
+      // sendの文字
       float: right;
       font-size: 16px;
       height: 50px;

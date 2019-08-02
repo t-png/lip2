@@ -8,6 +8,8 @@
   .chat
     .header
       .left-header
+      -# .left-header__timer
+        -# ここに残り時間を表示させる。
         .left-header__title
           = @group.name
           -# ここに今いるグループの名前を表示させなければならない。
@@ -21,6 +23,8 @@
         .right-header__button
           =link_to edit_group_path(@group.id) do
             Edit
+      .left-header__timer
+        -# ここに残り時間を表示させる。
     .messages
       = render @messages
       -# .message
